@@ -75,14 +75,14 @@ const ExamQuestions = () => {
         {currentQuestion < questions.length - 1 ? (
           <button
             onClick={() => setCurrentQuestion(prev => Math.min(questions.length - 1, prev + 1))}
-            className="bg-blue-600 text-white px-4 py-2 rounded"
+            className="bg-cyan-900 text-white px-6 py-3 rounded hover:bg-cyan-950"
           >
             Next
           </button>
         ) : (
           <button
             onClick={() => {handleSubmit();navigate('/results');}}
-            className="bg-green-600 text-white px-4 py-2 rounded"
+            className="bg-cyan-900 text-white px-6 py-3 rounded hover:bg-cyan-950"
           >
             Submit
           </button>
